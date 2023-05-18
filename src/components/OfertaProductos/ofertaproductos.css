@@ -47,6 +47,7 @@
         padding: 25px;
         margin-bottom: 25px;
         height: 80vh;
+        min-height: 600px !important;
     }
     .oferta-de-productos p {
         width: 80%;
