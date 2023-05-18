@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter} from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import MainRoutes from './routes/MainRoutes';
+import { useState } from 'react';
+import NavMobile from './components/NavMobile/NavMobile';
+import Footer from './components/Footer/Footer';
+import Menu from './components/Menu/Menu';
 
 function App() {
+
+  const [mobile, setMobile] = useState(window.innerWidth);
+  const [open, setOpen] = useState(false);
+
+
+  window.addEventListener("resize", ()=> {
+    setMobile(window.innerWidth)
+  })
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+      <BrowserRouter>
+
+      {open ? <Menu open={open} setOpen={setOpen}></Menu> : <></>}
+
+      {mobile > 900 ? <Navbar/> : <NavMobile open={open} setOpen={setOpen}/>}
+
+        <MainRoutes/>
+        <Footer/>
+
+      </BrowserRouter>
+    </>
+
   );
 }
 

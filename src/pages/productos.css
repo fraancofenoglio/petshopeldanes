@@ -1,0 +1,80 @@
+.aviso-productos-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.aviso-productos-imagen {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../assets/eldanes1.jpg);
+    background-size: cover;
+}
+
+.aviso-productos-imagen img {
+    width: 100vw;
+}
+
+.aviso-container {
+    margin: 5%;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(109, 191, 27, 0.649);
+    border-radius: 25px;
+    box-shadow: #242424 0px 2px 10px;
+}
+
+.aviso-container h2 {
+    font-size: 25px;
+    color: #242424;
+    color: #f5eaea;
+    text-shadow: 1px 1px 2px #141414;
+    font-weight: 100;
+    font-family: "quantico";
+}
+
+.aviso-container p {
+    text-align: center;
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    padding: 20px;
+    color: #3c3b3b;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #f5eaea;
+    font-family: "sigmar";
+}
+
+@media only screen and (min-width: 900px) {
+
+    .aviso-productos-container {
+        margin-top: 2%;
+    }
+    .aviso-productos-imagen {
+        width: 50vw;
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .aviso-container {
+        margin: 3% 0%;
+    }
+
+    .aviso-container h2 {
+        font-size: 30px;
+    }
+
+    .aviso-container p {
+        font-size: 20px;
+    }
+}

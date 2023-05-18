@@ -1,0 +1,120 @@
+.nosotros-titulo {
+    width: 100%;
+    text-align: center;
+    color: rgb(242, 93, 38);
+    margin-top: 7%;
+    /* margin-bottom: 5%; */
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "ultra";
+    text-shadow: 0px 1px 1px #141414;
+}
+
+.nosotros-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.nosotros-container-img {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    min-height: 35vh;
+    height: auto;
+    margin: 5% 0%;
+}
+
+.nosotros-container-img img {
+    width: 100vw;
+    min-height: 202px;
+    box-shadow: #242424 0px 0px 15px;
+}
+
+.nosotros-presentacion {
+    margin: 0 auto;
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(109, 191, 27, 0.649);
+    border-radius: 25px;
+    box-shadow: #242424 0px 2px 10px;
+}
+.nosotros-presentacion h2, .nosotros-presentacion-2 h2 {
+    font-size: 25px;
+    color: #242424;
+    color: #f5eaea;
+    text-shadow: 1px 1px 2px #141414;
+    font-weight: 100;
+    font-family: "quantico";
+}
+.nosotros-presentacion p, .nosotros-presentacion-2 p {
+    text-align: center;
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    padding: 20px;
+    color: #3c3b3b;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #f5eaea;
+    font-family: "sigmar";
+    
+}
+
+.nosotros-presentacion-2 {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(109, 191, 27, 0.649);
+    border-radius: 25px;
+    box-shadow: #242424 0px 2px 10px;
+}
+
+@media only screen and (min-width: 900px) {
+    .nosotros-titulo {
+        font-size: 40px;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
+
+    .nosotros-container {
+        margin-bottom: 1%;
+    }
+
+    .nosotros-container-img {
+        width: 50vw;
+        margin: 0%;
+    }
+
+    .nosotros-container-img img {
+        width: 50vw;
+        border-radius: 25px;
+    }
+
+    .nosotros-presentacion, .nosotros-presentacion-2 {
+        position: relative;
+        top: -50px;
+        width: 60vw;
+        padding: 3%;
+    }
+
+    .nosotros-presentacion h2, .nosotros-presentacion-2 h2 {
+        font-size: 30px;
+    }
+    .nosotros-presentacion p, .nosotros-presentacion-2 p {
+        font-size: 20px;
+    }
+
+}
