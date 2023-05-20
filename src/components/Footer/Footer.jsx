@@ -27,7 +27,7 @@ const Footer = () => {
       <ul>
         <li>
           <img className="icono-redes" src={whatsapp} alt="whatsapp el danes bragado" />
-          <a href="/">+5492342450142</a>
+          <a href="https://wa.me/5492342450142/?text=Hola,%20me%20gustaría%20consultarte%20sobre" target="_blank" rel="noreferrer">+5492342450142</a>
         </li>
         <li>
           <img className="icono-redes" src={facebook} alt="facebook el danes bragado" />

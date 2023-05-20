@@ -8,7 +8,7 @@ const RedesContacto = () => {
         <ul className="lista-redes">
         <li>
             <p>WhatsApp:</p>
-            <a href="/">2342-450142</a>
+            <a href="https://wa.me/5492342450142/?text=Hola,%20me%20gustaría%20consultarte%20sobre" target="_blank" rel="noreferrer">2342-450142</a>
         </li>
         <li>
             <p>Facebook:</p>
